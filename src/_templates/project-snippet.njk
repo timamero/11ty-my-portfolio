@@ -1,0 +1,12 @@
+<div class="project__item">
+    <h3>{{ project.data.title }}</h3>
+    <p>{{ project.data.description }}</p>
+    <p>{{ project.data.stack }}</p>
+    <img class="project__img" src="{{ project.data.img }}" alt="Screenshot of project">
+    <div class="project_btn-wrapper">
+        {% if project.data.demo %}
+        <a href="{{ project.data.demo }}" target="_blank">Demo</a>
+        {% endif %}
+        <a href="{{ project.data.github }}" target="_blank">Github</a>
+    </div>
+</div>

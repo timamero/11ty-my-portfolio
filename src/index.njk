@@ -1,0 +1,91 @@
+---
+title: Fatima Camero
+layout: base.njk
+---
+
+<main class="main">
+    <div class="section intro">
+        <img class="intro__hero-img" src="images/f-hero.svg" alt="Hello, my name is Fatima Camero, a web developer">
+        <a class="action" href="#">
+            <div class="action__wrapper">
+                <p>See my work</p>
+                <svg version="1.1" viewBox="0 0 18.406 26.812" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                    <metadata>
+                        <rdf:RDF>
+                            <cc:Work rdf:about="">
+                                <dc:format>image/svg+xml</dc:format>
+                                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                <dc:title />
+                            </cc:Work>
+                        </rdf:RDF>
+                    </metadata>
+                    <path
+                        d="M 5,0 4.28125,0.6875 0.6875,4.3125 0,5 0.6875,5.71875 8.375,13.40625 0.6875,21.09375 0,21.8125 0.6875,22.5 4.28125,26.125 5,26.8125 5.71875,26.125 l 12,-12 0.6875,-0.71875 -0.6875,-0.71875 -12,-12 z M 5,2.84375 15.5625,13.40625 5,23.96875 2.8125,21.78125 10.5,14.125 11.21875,13.40625 10.5,12.6875 2.8125,5.03125 Z" />
+                </svg>
+            </div>
+        </a>
+    </div>
+    <div class="section section--min-height section--bg-gradient service">
+        <h2 class="">I also create websites for individuals and small businesses.</h2>
+        <a class="action" href="/about.html#services">
+            <div class="action__wrapper">
+                <p>Let's work together!</p>
+                <svg version="1.1" viewBox="0 0 18.406 26.812" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+                    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                    <metadata>
+                        <rdf:RDF>
+                            <cc:Work rdf:about="">
+                                <dc:format>image/svg+xml</dc:format>
+                                <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                                <dc:title />
+                            </cc:Work>
+                        </rdf:RDF>
+                    </metadata>
+                    <path
+                        d="M 5,0 4.28125,0.6875 0.6875,4.3125 0,5 0.6875,5.71875 8.375,13.40625 0.6875,21.09375 0,21.8125 0.6875,22.5 4.28125,26.125 5,26.8125 5.71875,26.125 l 12,-12 0.6875,-0.71875 -0.6875,-0.71875 -12,-12 z M 5,2.84375 15.5625,13.40625 5,23.96875 2.8125,21.78125 10.5,14.125 11.21875,13.40625 10.5,12.6875 2.8125,5.03125 Z" />
+                </svg>
+            </div>
+        </a>
+    </div>
+
+    <div class="section section--flex-start section--min-height project">
+        <h2>Featured Projects</h2>
+        <div class="project__wrapper">
+            {%- for project in collections.featuredproject -%}
+            {% include "project-snippet.njk" %}
+            {%- endfor -%}
+        </div>
+        <a class="last-section-element-margin" href="/project.html">See more projects here</a>
+    </div>
+
+    <div class="section section--flex-start contact" id="contact">
+        <h2>Contact</h2>
+        <h3>Send Me A Message</h3>
+        <form class="form" id="contact-form" method="POST"
+            action="https://getform.io/f/764bd3b2-1f33-4976-b5b2-ba5a1a649a60">
+            <div class="form__field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form__field">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form__field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" required></textarea>
+            </div>
+            <input class="form__submit" id="form__submit" type="submit" value="Send Message">
+        </form>
+        <div class="social">
+            <h3>Let's Connect!</h3>
+            <div class="social__icon-wrapper">
+                {% include "social-snippet.njk" %}
+            </div>
+        </div>
+        <p class="text-small">Email: <a href="mailto:fatimacamerodev@gmail.com">fatimacamerodev@gmail.com</a></p>
+    </div>
+</main>

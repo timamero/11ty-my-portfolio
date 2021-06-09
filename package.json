@@ -1,0 +1,33 @@
+{
+  "name": "myportfolio-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "npx del-cli dist src/css/styles.css",
+    "prestart": "npm run clean",
+    "prebuild": "npm run clean",
+    "postcss:process": "npx postcss src/css/post.css --o src/css/styles.css --watch",
+    "serve": "set ELEVENTY_ENV=dev & npx @11ty/eleventy --serve",
+    "start": "concurrently \"npm run postcss:process\" \"npm run serve\"",
+    "build": "set ELEVENTY_ENV=dev & npx @11ty/eleventy postcss src/css/post.css > src/css/styles.css",
+    "build:prod": "set ELEVENTY_ENV=production & npx @11ty/eleventy postcss src/css/post.css > src/css/styles.css",
+    "debug": "set DEBUG=* & npx eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.2.6",
+    "concurrently": "^6.2.0",
+    "cssnano": "^5.0.4",
+    "postcss": "^8.3.0",
+    "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "eleventy-plugin-error-overlay": "^0.1.2",
+    "html-minifier": "^4.0.0"
+  }
+}

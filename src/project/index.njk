@@ -1,0 +1,19 @@
+---
+title: Project
+layout: base.njk
+permalink: project.html
+---
+
+<main class="main">
+    <div class="section section--flex-start section--min-height project">
+        <h1>Projects</h1>
+        <div class="project__wrapper">
+            {%- for project in collections.project -%}
+            {% include "project-snippet.njk" %}
+            {%- endfor -%}
+        </div>
+        <p class="last-section-element-margin">See <a href="https://github.com/timamero">more projects on github</a> and
+            <a href="https://codepen.io/mango_mero">my work in codepen</a></p>
+    </div>
+
+</main>
