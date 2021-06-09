@@ -4,14 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "npx del-cli dist src/css/styles.css",
+    "clean": "npx del-cli dist",
     "prestart": "npm run clean",
     "prebuild": "npm run clean",
     "postcss:process": "npx postcss src/css/post.css --o src/css/styles.css --watch",
     "serve": "set ELEVENTY_ENV=dev & npx @11ty/eleventy --serve",
     "start": "concurrently \"npm run postcss:process\" \"npm run serve\"",
-    "build": "set ELEVENTY_ENV=dev & npx @11ty/eleventy & postcss src/css/post.css --o src/css/styles.css",
-    "build:prod": "set ELEVENTY_ENV=production & npx @11ty/eleventy & postcss src/css/post.css --o src/css/styles.css",
+    "build:css": "postcss src/css/post.css --o src/css/styles.css",
+    "build:11ty": "set ELEVENTY_ENV=production & npx @11ty/eleventy",
+    "build:prod": "run-s build:css build:11ty",
     "debug": "set DEBUG=* & npx eleventy"
   },
   "keywords": [],
@@ -22,6 +23,7 @@
     "autoprefixer": "^10.2.6",
     "concurrently": "^6.2.0",
     "cssnano": "^5.0.4",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.3.0",
     "postcss-cli": "^8.3.1"
   },
