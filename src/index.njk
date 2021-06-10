@@ -6,7 +6,7 @@ layout: base.njk
 <main class="main">
     <div class="section intro">
         <img class="intro__hero-img" src="images/f-hero.svg" alt="Hello, my name is Fatima Camero, a web developer">
-        <a class="action" href="#">
+        <a class="action" href="#featured-projects">
             <div class="action__wrapper">
                 <p>See my work</p>
                 <svg version="1.1" viewBox="0 0 18.406 26.812" xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@ layout: base.njk
         </a>
     </div>
 
-    <div class="section section--flex-start section--min-height project">
+    <div class="section section--flex-start section--min-height project" id="featured-projects">
         <h2>Featured Projects</h2>
         <div class="project__wrapper">
             {%- for project in collections.featuredproject -%}
