@@ -309,6 +309,7 @@ a:hover {
   background: var(--transparent-gradient);
 }
 
+
 /***** Action Link *****/
 .action {
   margin: 24px 0;
@@ -348,12 +349,13 @@ a:hover {
   background-color: var(--orange-light);
 }
 
+
 /***** Service *****/
 .service h2 {
   font-size: 1.2rem;
 }
 
-/***** Featured *****/
+
 /***** Project Snippet *****/
 .project {
   padding-bottom: 0;
@@ -432,7 +434,6 @@ a:hover {
   height: 4rem;
 }
 
-
 #form__submit {
   cursor: pointer;
   padding: 4px 24px;
@@ -446,6 +447,7 @@ a:hover {
 #form__submit:hover {
   background-color: var(--orange-lightest);
 }
+
 
 /***** Social *****/
 .social {
@@ -501,6 +503,7 @@ a:hover {
   margin-bottom: 8px;
 }
 
+
 /***** Tech Stack *****/
 .tech-stack-wrapper {
   margin-top: 24px;
@@ -509,6 +512,7 @@ a:hover {
   flex-direction: column;
   justify-content: center;
 }
+
 
 /***** Services *****/
 .services__info-wrapper {
@@ -541,6 +545,7 @@ a:hover {
   padding: 4px 16px 0 40px;
 }
 
+
 /***** Footer *****/
 .footer {
   margin-top: 20vh;
@@ -550,8 +555,9 @@ a:hover {
   width: max-content;
 }
 
-@media screen and (min-width: 480px) {
 
+/***** Media Queries *****/
+@media screen and (min-width: 480px) {
   .project__item h3,
   .project__item p {
     text-align: center;

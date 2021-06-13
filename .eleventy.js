@@ -4,10 +4,6 @@ const ErrorOverlay = require('eleventy-plugin-error-overlay');
 module.exports = eleventyConfig => {
     eleventyConfig.setTemplateFormats(['njk']);
 
-    // eleventyConfig.addCollection("project", function(collection) {
-    //     return collection.getAll();
-    // });
-
     eleventyConfig.addPassthroughCopy('src/js');
     eleventyConfig.addPassthroughCopy('src/css/styles.css');
     eleventyConfig.addPassthroughCopy('src/images');
