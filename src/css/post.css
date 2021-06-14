@@ -175,7 +175,7 @@ a:hover {
 
 .hamburger-box {
   width: 40px;
-  height: var(--nav-height)/2;
+  height: calc(var(--nav-height)*50%);
   display: inline-block;
   position: relative;
 }
