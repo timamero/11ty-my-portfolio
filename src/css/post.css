@@ -83,6 +83,11 @@ a:hover {
   margin-bottom: 24px;
 }
 
+.hide {
+  position: absolute;
+  right: 4000px;
+}
+
 /***** Nav *****/
 .nav {
   position: fixed;
