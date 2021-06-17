@@ -322,7 +322,6 @@ a:hover {
   padding-right: 8px;
   width: 100%;
   text-decoration: none;
-
 }
 
 .action__wrapper {
@@ -352,6 +351,10 @@ a:hover {
 
 .action__wrapper:hover {
   background-color: var(--orange-light);
+}
+
+.action--margin-top-zero {
+  margin-top: 0px;
 }
 
 

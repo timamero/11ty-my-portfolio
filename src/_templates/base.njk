@@ -22,20 +22,23 @@
 <body>
 
     <nav class='nav'>
-        <a class='nav__item' href="/">
+        <a class='nav__item' href="/#intro">
             <img class="logo" src="/images/flogo.svg" alt="Fatima Camero">
         </a>
 
         <ul class="nav__item nav-links-container" id="nav-links-container">
-            <li class="nav__link-wrapper">
+            {# <li class="nav__link-wrapper">
                 <a class="nav__link" href="/about.html">About</a>
-            </li>
+            </li> #}
             <li class="nav__link-wrapper">
                 <a class="nav__link" href="/project.html">Projects</a>
             </li>
             <li class="nav__link-wrapper">
                 <a class="nav__link" href="/#contact" {% if page.url == "/" %} id="contact-nav-link"
                     {% endif %}>Contact</a>
+            </li>
+            <li class="nav__link-wrapper">
+                <a class="nav__link" href="/services.html">Services</a>
             </li>
         </ul>
 
