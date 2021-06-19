@@ -27,9 +27,10 @@
         </a>
 
         <ul class="nav__item nav-links-container" id="nav-links-container">
-            {# <li class="nav__link-wrapper">
-                <a class="nav__link" href="/about.html">About</a>
-            </li> #}
+            <li class="nav__link-wrapper">
+                <a class="nav__link" href="/#about" {% if page.url == "/" %} id="about-nav-link"
+                    {% endif %}>About</a>
+            </li>
             <li class="nav__link-wrapper">
                 <a class="nav__link" href="/project.html">Projects</a>
             </li>
