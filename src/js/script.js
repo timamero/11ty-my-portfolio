@@ -3,10 +3,10 @@ const navLinks = document.getElementById('nav-links-container');
 const navLinksList = document.querySelectorAll('.nav__link')
 const contactNavLink = document.getElementById('contact-nav-link')
 const aboutNavLink = document.getElementById('about-nav-link')
-const contactForm = document.getElementById('contact-form')
+// const contactForm = document.getElementById('contact-form')
 
 
-contactForm.action = process.env.GET_FORM
+// contactForm.action = process.env.GET_FORM
 // console.dir(contactForm)
 
 burger.addEventListener('click', function () {
