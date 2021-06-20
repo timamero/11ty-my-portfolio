@@ -28,6 +28,5 @@ module.exports = eleventyConfig => {
             includes: '_templates',
             data: '_data',
         },
-        jsDataFileSuffix: '.data'
     }
 }
