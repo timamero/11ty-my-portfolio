@@ -1,3 +1,4 @@
+require("dotenv").config();
 const HtmlMin = require('html-minifier');
 const ErrorOverlay = require('eleventy-plugin-error-overlay');
 
