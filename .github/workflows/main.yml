@@ -23,7 +23,7 @@ jobs:
       - name: Create env file
         run: |
           touch .env
-          echo GET_FORM=${{ secrets.API_KEY }} >> .env
+          echo GET_FORM=${{ secrets.GET_FORM }} >> .env
           cat .env
     
       - name: Build the website
