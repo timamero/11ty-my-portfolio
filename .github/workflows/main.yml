@@ -23,7 +23,7 @@ jobs:
       - name: Make envfile
         uses: SpicyPizza/create-envfile@v1
         with:
-          GET_FORM: ${{ secrets.GET_FORM }}
+          envkey_GET_FORM: ${{ secrets.GET_FORM }}
           file_name: .env
     
       - name: Build the website
