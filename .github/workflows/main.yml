@@ -24,7 +24,6 @@ jobs:
         uses: SpicyPizza/create-envfile@v1
         with:
           envkey_GET_FORM: ${{ secrets.GET_FORM }}
-          directory: eleventy
           file_name: .env
     
       - name: Build the website
