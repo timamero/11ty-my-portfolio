@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
     "eleventy-plugin-error-overlay": "^0.1.2",
     "html-minifier": "^4.0.0"
   }
