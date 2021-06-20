@@ -86,7 +86,7 @@ layout: base.njk
     <div class="section section--flex-start contact" id="contact">
         <h2>Contact</h2>
         <h3>Send Me A Message</h3>
-        <form class="form" id="contact-form" method="POST">
+        <form class="form" id="contact-form" method="POST" action={{ meta.getform }}>
             <div class="form__field">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" required>
