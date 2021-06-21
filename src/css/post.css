@@ -104,7 +104,15 @@ a:hover {
   height: 60px;
   padding: 4px;
   fill: var(--dark);
-  stroke: var(--dark);
+  transition: var(--typ-transition);
+}
+
+.logo:hover {
+  fill: var(--orange-light);
+}
+
+.logo:active {
+  fill: var(--blue-lightest);
 }
 
 .nav-links-container {
