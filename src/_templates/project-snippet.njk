@@ -5,10 +5,10 @@
     <img class="project__img" src="{{ project.data.img }}" alt="{{ project.data.alt }}">
     <div class="project_btn-wrapper">
         {% if project.data.demo %}
-        <a href="{{ project.data.demo }}" target="_blank">Demo</a>
+        <a href="{{ project.data.demo }}" target="_blank" rel="noopener">Demo</a>
         {% endif %}
         {% if project.data.github %}
-        <a href="{{ project.data.github }}" target="_blank">Github</a>
+        <a href="{{ project.data.github }}" target="_blank" rel="noopener">Github</a>
         {% endif %}  
     </div>
 </div>
