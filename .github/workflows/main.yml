@@ -19,12 +19,6 @@ jobs:
       # Uncomment if your project uses dependencies
       - name: Install dependencies
         run: npm install
-
-      - name: Create env file
-        run: |
-          touch .env
-          echo GET_FORM=${{ secrets.GET_FORM }} >> .env
-          cat .env
     
       - name: Build the website
         run: npm run build:prod
