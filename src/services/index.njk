@@ -41,10 +41,14 @@ permalink: services.html
 
     </div>
 
-    {# <div class="section section--flex-start section--min-height sample">
+    <div class="section section--flex-start section--min-height sample">
         <h2>Sample Websites</h2>
 
-        <p>Coming soon!</p>
+        <div class="sample__wrapper">
+            {%- for sample in collections.sample -%}
+            {% include "sample-snippet.njk" %}
+            {%- endfor -%}
+        </div>
 
-    </div> #}
+    </div>
 </main>

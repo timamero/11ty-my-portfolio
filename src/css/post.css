@@ -562,6 +562,45 @@ a:hover {
 }
 
 
+/***** Sample Websites *****/
+.sample__wrapper {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.sample__item {
+  margin-bottom: 24px;
+  width: max-content;
+  padding: 16px;
+  background: var(--transparent-gradient);
+  /* border: 1px solid var(--orange-light); */
+  border-radius: var(--typ-radius);
+}
+
+.sample__img-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.sample__img, .sample__img-mobile {
+  height: 100px;
+}
+
+.sample__img {
+  width: 200px;
+  margin: 0 auto 8px auto;
+  object-fit: cover;
+  object-position: left;
+}
+
+.sample__img-mobile {
+  margin: 0 auto 8px auto;
+}
+
+
 /***** Footer *****/
 .footer {
   margin-top: 20vh;
@@ -577,6 +616,14 @@ a:hover {
   .project__item h3,
   .project__item p {
     text-align: center;
+  }
+
+  .sample__img, .sample__img-mobile {
+    height: 200px;
+  }
+  
+  .sample__img {
+    width: 400px;
   }
 }
 
@@ -649,4 +696,14 @@ a:hover {
   .form__field {
     max-width: 500px;
   }
+
+  /***** Sample Websites *****/
+
+  /* .sample__img, .sample__img-mobile {
+    height: 200px;
+  }
+
+  .sample__img {
+    width: 400px;
+  } */
 }
